@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To My Lover ❤️</title>
+    <link rel='stylesheet'
+          href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<audio id="audio" controls>
+    <!--  <source src="https://dl01.dtmp3.pw/mp3/32833.mp3" type="audio/mpeg">-->
+      <source src="https://dl.mexedi.am/mp3/Hayko_-_Sirum_Em_(www.mexedi.am).mp3" type="audio/mpeg">
+<!--    <source src="https://dl2.mp3party.net/online/10151565.mp3" type="audio/mpeg">-->
+    Your browser does not support the audio element.
+</audio>
+
+<!-- partial:index.partial.html -->
+
+<div id="paper1" class="paper-item paper heart" style="display: none;">
+    <button class="heart"></button>
+</div>
+
+<div id="paper2" class="paper-item paper image" style="display: none;">
+    <p> Thank You for coming</p>
+    <p>into my life... 🥰 </p>
+    <img src="images/5.jpg" alt=""/>
+</div>
+
+<div id="paper3" class="paper-item paper image" style="display: none;">
+    <p> and I fallen in</p>
+    <p>Love with You 🤗 </p>
+    <img src="images/1.jpg" alt=""/>
+</div>
+
+
+<div id="paper4" class="paper-item paper image" style="display: none;">
+    <p>I need your hug ❤️</p>
+    <p>each moment of my life</p>
+    <img src="images/2.jpg" alt=""/>
+</div>
+
+
+<div id="paper5" class="paper-item paper image" style="display: none;">
+    <p>Every day I miss you</p>
+    <p>more and more and more 🥺</p>
+    <img src="images/4.jpg" alt=""/>
+</div>
+
+
+<div id="paper6" class="paper-item paper image" style="display: none;">
+    <p>How can be </p>
+    <p> someone so cute ❤️ </p>
+    <img src="images/3.jpg" alt=""/>
+</div>
+
+
+<div id="paper8" class="paper-item paper red" style="display: none;">
+    <p class="p1">Your voice is my</p>
+    <p class="p2">Favorite sound 🥰</p>
+</div>
+
+<div id="paper7" class="paper-item paper image" style="display: none;">
+    <p class="p1"> and My Favorite</p>
+    <p class="p2">Person 😍</p>
+    <img src="images/6.jpg" alt=""/>
+</div>
+
+<div id="paper9" class="paper-item paper image" style="display: none;">
+    <p class="p1">You are Cute </p>
+    <p class="p1">Amazing 😆😂</p>
+    <img src="images/7.jpg" alt=""/>
+</div>
+
+<div id="paper10" class="paper-item paper" style="display: none;">
+    <p class="p1">Swipe the papers</p>
+    <p class="p1">To reveal the Surprise 🤩!</p>
+</div>
+
+<!-- partial -->
+
+<script src="./heartScript.js"></script>
+<script src="./script.js"></script>
+
+<script>
+    // Function to check if the user is on a mobile device
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Load appropriate script based on device
+    if (isMobileDevice()) {
+        const mobileScript = document.createElement('script');
+        mobileScript.src = "./mobile.js";
+        document.head.appendChild(mobileScript);
+    } else {
+        const webScript = document.createElement('script');
+        webScript.src = "./web.js";
+        document.head.appendChild(webScript);
+    }
+</script>
+
+</body>
+</html>
